@@ -1,0 +1,362 @@
+/* ==========================================================
+   WildGuard - pages.css  (muat SETELAH landing.css / style.css)
+   Warna tetap memakai variabel yang sudah ada.
+   ========================================================== */
+
+/* --- satu halaman tampil sekali --- */
+body:not([data-page="home"]) .hero,
+body:not([data-page="home"]) .ticker,
+body:not([data-page="home"]) .kategori,
+body:not([data-page="edukasi"]) #edukasi,
+body:not([data-page="laporan"]) #laporan,
+body:not([data-page="tentang"]) #tentang { display: none; }
+
+/* satu momen masuk saat pindah halaman */
+@keyframes sheet-in {
+  from { opacity: 0; transform: translateY(28px) rotate(0.6deg); }
+  to { opacity: 1; transform: none; }
+}
+.sheet,
+body[data-page="edukasi"] #edukasi,
+body[data-page="laporan"] #laporan,
+body[data-page="tentang"] #tentang {
+  animation: sheet-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.sheet {
+  max-width: var(--lebar);
+  margin: 0 auto;
+  padding: 56px 28px 90px;
+}
+
+/* halaman edukasi/laporan/tentang berdiri sendiri, beri ruang atas */
+body[data-page="edukasi"] #edukasi,
+body[data-page="laporan"] #laporan { margin-top: 32px; }
+body[data-page="tentang"] #tentang { padding-top: 56px; }
+
+/* --- rail vertikal di tepi kiri (desktop lebar) --- */
+.rail { display: none; }
+@media (min-width: 1380px) {
+  .rail {
+    display: block;
+    position: fixed;
+    left: 16px;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: var(--mawar);
+  }
+  .rail::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 80px;
+    margin: 0 auto 14px;
+    background: var(--kelopak);
+  }
+}
+
+/* --- label folio (seperti label spesimen) --- */
+.folio {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 4px 16px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--mawar);
+  background: var(--blush);
+  border: 2px dashed var(--kelopak);
+  border-radius: var(--radius-pil);
+  transform: rotate(-2deg);
+}
+
+.arsip-title {
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+}
+
+.arsip-title br + * { padding-left: 0; }
+
+/* --- alat cari --- */
+.arsip-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin: 34px 0 12px;
+}
+.arsip-tools .search-box { flex: 1 1 280px; }
+
+.chips { display: flex; gap: 8px; }
+
+.chip {
+  padding: 10px 22px;
+  font-family: var(--display);
+  font-weight: 700;
+  background: #fff;
+  border: 2px solid var(--rimba);
+  border-radius: var(--radius-pil);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.15s ease;
+}
+.chip:hover { background: var(--blush); }
+.chip[aria-pressed="true"] {
+  background: var(--rimba);
+  color: #fff;
+  box-shadow: 3px 3px 0 var(--kelopak);
+}
+
+.arsip-count {
+  margin-bottom: 26px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--tinta-lembut);
+}
+
+/* --- kartu spesimen --- */
+.specimen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px 28px;
+  align-items: start;
+}
+.specimen-grid > .artikel-empty { grid-column: 1 / -1; }
+
+.spec {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 14px 20px;
+  background: #fff;
+  border: 2px solid var(--rimba);
+  border-radius: 30px;
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.spec:nth-child(odd) { --tilt: -1deg; }
+.spec:nth-child(even) { --tilt: 1deg; }
+.spec:nth-child(3n + 2) { margin-top: 44px; }
+.spec:hover {
+  transform: rotate(0) translateY(-6px);
+  box-shadow: 6px 6px 0 var(--kelopak);
+}
+
+.spec-img,
+.detail-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--pucuk);
+  border: 2px solid var(--rimba);
+  border-radius: 999px 999px 20px 20px;
+  filter: saturate(1.08) contrast(1.03);
+}
+.spec-fauna .spec-img,
+.spec-fauna .detail-img { border-radius: 130px 20px 130px 20px; }
+
+.spec-kind {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  padding: 2px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #24573A;
+  background: var(--pucuk);
+  border: 2px solid var(--rimba);
+  border-radius: var(--radius-pil);
+}
+.spec-fauna .spec-kind { color: #9A2B5C; background: var(--blush); }
+
+.spec-no {
+  margin-top: 10px;
+  padding: 0 4px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--tinta-lembut);
+}
+.spec h3 { padding: 0 4px; font-size: 1.28rem; }
+.spec-latin { padding: 0 4px; font-style: italic; font-size: 0.9rem; color: var(--tinta-lembut); }
+.spec-go {
+  margin-top: 8px;
+  padding: 0 4px;
+  font-family: var(--display);
+  font-weight: 700;
+  color: var(--mawar);
+  text-decoration: underline;
+  text-decoration-color: var(--kelopak);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+/* --- pager --- */
+.pager { display: flex; justify-content: center; gap: 10px; margin-top: 52px; }
+.pager button {
+  width: 46px;
+  height: 46px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1rem;
+  background: #fff;
+  border: 2px solid var(--rimba);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.pager button:hover:not(:disabled) { background: var(--blush); }
+.pager button[aria-current="page"] {
+  background: var(--rimba);
+  color: #fff;
+  box-shadow: 3px 3px 0 var(--kelopak);
+}
+.pager button:disabled { opacity: 0.35; cursor: not-allowed; }
+
+/* --- halaman detail --- */
+a.back-btn { display: inline-block; }
+
+.folio-sheet {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 5vw, 72px);
+  margin-top: 28px;
+  padding: clamp(24px, 4vw, 48px);
+  background: #fff;
+  border: 2px solid var(--rimba);
+  border-radius: 44px;
+  box-shadow: 10px 10px 0 var(--kelopak);
+}
+
+.detail-fig {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+.detail-img { border-width: 3px; border-radius: 999px 999px 36px 36px; }
+.spec-fauna.detail-fig .detail-img { border-radius: 200px 36px 200px 36px; }
+
+.status-stamp {
+  position: absolute;
+  top: 34px;
+  right: -22px;
+  display: grid;
+  place-items: center;
+  width: 116px;
+  height: 116px;
+  padding: 16px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--pucuk);
+  background: var(--rimba);
+  border-radius: 50%;
+  outline: 2px dashed var(--kelopak);
+  outline-offset: -8px;
+  transform: rotate(-12deg);
+}
+
+.detail-main h2 {
+  font-size: clamp(2.3rem, 5vw, 3.9rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.detail-main h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.detail-main > p:not(.folio):not(.modal-latin) { max-width: 60ch; }
+
+.label-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 22px 0 26px;
+  border-top: 2px dashed var(--kelopak);
+}
+.label-list div {
+  padding: 12px 14px 12px 0;
+  border-bottom: 2px dashed var(--garis);
+}
+.label-list dt { font-size: 0.82rem; font-weight: 700; color: var(--daun); }
+.label-list dd { font-weight: 700; }
+
+.sticky-note {
+  position: relative;
+  max-width: 52ch;
+  margin-top: 30px;
+  padding: 24px 22px 18px;
+  background: var(--blush);
+  border-radius: 6px 24px 6px 24px;
+  box-shadow: 4px 4px 0 var(--kelopak);
+  transform: rotate(-1.5deg);
+}
+.sticky-note::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 90px;
+  height: 24px;
+  margin-left: -45px;
+  background: var(--pucuk);
+  opacity: 0.9;
+  transform: rotate(3deg);
+}
+.sticky-note strong { display: block; margin-bottom: 4px; font-family: var(--display); color: var(--mawar); }
+.sticky-note p { margin: 0; }
+
+.spec-nav { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 40px; }
+.spec-link {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 14px 24px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--rimba);
+  background: var(--pucuk-muda);
+  border: 2px solid var(--rimba);
+  border-radius: 28px 8px 28px 8px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.spec-link.r { text-align: right; border-radius: 8px 28px 8px 28px; }
+.spec-link small { font-family: var(--body); font-weight: 600; font-size: 0.8rem; color: var(--tinta-lembut); }
+.spec-link:hover { background: var(--blush); transform: translateY(-3px); }
+
+/* --- responsif --- */
+@media (max-width: 960px) {
+  .specimen-grid { grid-template-columns: repeat(2, 1fr); }
+  .spec:nth-child(3n + 2) { margin-top: 0; }
+  .spec:nth-child(even) { margin-top: 30px; }
+  .folio-sheet { grid-template-columns: 1fr; }
+  .detail-fig { position: relative; top: 0; width: 100%; max-width: 420px; margin: 0 auto; }
+  .status-stamp { right: -8px; }
+}
+
+@media (max-width: 600px) {
+  .sheet { padding: 36px 18px 70px; }
+  .specimen-grid { gap: 20px 12px; }
+  .spec { padding: 10px 10px 16px; border-radius: 24px; }
+  .spec-kind { top: 18px; right: 18px; font-size: 0.7rem; }
+  .spec h3 { font-size: 1rem; }
+  .spec-latin { font-size: 0.78rem; }
+  .spec-go { display: none; }
+  .chips { width: 100%; }
+  .chip { flex: 1; padding: 10px 8px; }
+  .label-list { grid-template-columns: 1fr; }
+  .status-stamp { width: 94px; height: 94px; font-size: 0.64rem; padding: 12px; }
+  .folio-sheet { border-radius: 30px; box-shadow: 6px 6px 0 var(--kelopak); }
+  .spec-link { min-width: 0; flex: 1; }
+}

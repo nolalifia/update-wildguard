@@ -1,0 +1,198 @@
+/* ==========================================================
+   CRUD: halaman kelola (admin) dan Laporan Saya, memakai tampilan WildGuard.
+   Semua aturan di bawah .crud supaya tidak bentrok dengan css situs.
+   ========================================================== */
+.crud{max-width:1100px;margin:0 auto;padding:28px 20px 60px;min-height:60vh;color:var(--tinta)}
+.crud h1{font-size:1.8rem;color:var(--rimba);line-height:1.2}
+.crud h2{font-size:1.15rem;color:var(--rimba);margin-bottom:12px}
+.crud h3{color:var(--rimba);margin:14px 0 4px}
+.crud .field label{display:block;font-weight:700;font-size:.9rem;color:var(--rimba);margin-bottom:5px}
+.crud .field:first-child{grid-column:auto}
+.crud .card{margin-top:0;display:block}
+.crud .card:nth-child(even){margin-top:0}
+.crud .chk input{width:auto}
+.crud .field input[type=checkbox]{width:auto}
+
+/* sub-menu admin di bawah navbar situs */
+.subnav{max-width:1080px;margin:14px auto 0;padding:0 16px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.subnav a,.subnav summary{padding:6px 16px;border-radius:999px;font-weight:700;font-size:.9rem;cursor:pointer;list-style:none;color:var(--rimba);background:var(--pucuk-muda);border:2px solid transparent}
+.subnav a:hover,.subnav summary:hover{border-color:var(--rimba)}
+.subnav a.on,.subnav .dd.on summary{background:var(--rimba);color:#fff}
+.subnav .dd{position:relative}
+.subnav .dd summary::-webkit-details-marker{display:none}
+.subnav .dd>div{position:absolute;left:0;top:115%;z-index:20;background:#fff;border:2px solid var(--rimba);border-radius:16px;min-width:200px;padding:6px;box-shadow:4px 4px 0 var(--kelopak)}
+.subnav .dd>div a{display:block;background:none;border:none;padding:8px 12px;border-radius:10px}
+.subnav .dd>div a:hover{background:var(--blush);color:var(--mawar)}
+.crud h1{font-size:1.8rem;color:var(--rimba);line-height:1.2}
+.crud h2{font-size:1.15rem;color:var(--rimba);margin-bottom:12px}
+.crud h3{color:var(--rimba);margin:14px 0 4px}
+.crud .muted{color:var(--tinta-lembut)} .crud .small{font-size:.85rem} .crud .center{text-align:center} .crud .r{text-align:right}
+.crud .head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.crud .btn{display:inline-block;background:var(--rimba);color:#fff;border:2px solid var(--rimba);padding:9px 20px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 var(--kelopak);transition:.15s}
+.crud .btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--kelopak)}
+.crud .btn.ghost{background:#fff;color:var(--rimba);box-shadow:none}
+.crud .btn.ghost:hover{background:var(--pucuk-muda);transform:none}
+.crud .card{background:#fff;border:2px solid var(--rimba);border-radius:22px;padding:20px}
+.crud .card.tbl{padding:0;overflow-x:auto}
+.crud .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.crud .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:20px 0}
+.crud .stat{background:var(--pucuk-muda);border:2px solid var(--rimba);border-radius:22px;padding:16px 20px;font-weight:600;color:var(--tinta-lembut)}
+.crud .stat span{display:block;font-size:2.2rem;font-weight:700;color:var(--rimba);line-height:1.1}
+.crud table{width:100%;border-collapse:collapse}
+.crud th, .crud td{padding:11px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--garis)}
+.crud th{background:var(--pucuk-muda);color:var(--rimba);font-size:.88rem}
+.crud th.r, .crud td.r{text-align:right}
+.crud tbody tr:last-child td{border-bottom:none}
+.crud tbody tr:hover{background:#fffafc}
+.crud .act{white-space:nowrap}
+.crud .act a, .crud .act .link{color:var(--daun);font-weight:700;margin-left:12px}
+.crud .act form{display:inline}
+.crud .link{background:none;border:none;font:inherit;cursor:pointer}
+.crud .danger{color:var(--mawar)!important}
+.crud .act a:hover, .crud .link:hover{text-decoration:underline}
+.crud .badge{display:inline-block;background:var(--pucuk);color:#24573A;border-radius:999px;padding:1px 12px;font-size:.78rem;font-weight:700}
+.crud .b-fauna{background:var(--blush);color:#9A2B5C}
+.crud .b-flora{background:var(--pucuk);color:#24573A}
+.crud .b-baru{background:#FFE9B8;color:#7A5200}
+.crud .b-diproses{background:#DDE8FF;color:#27408B}
+.crud .b-selesai{background:var(--pucuk);color:#24573A}
+.crud .filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.crud .filter input, .crud .filter select{padding:9px 16px;border:2px solid var(--garis);border-radius:999px;font:inherit;background:#fff;min-width:200px}
+.crud .form{display:grid;gap:16px}
+.crud .form.narrow{max-width:520px}
+.crud .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.crud .field input, .crud .field select, .crud .field textarea{width:100%;padding:10px 14px;border:2px solid var(--garis);border-radius:14px;font:inherit;background:#fff}
+.crud .field input:focus, .crud .field select:focus, .crud .field textarea:focus{outline:none;border-color:var(--mawar);box-shadow:0 0 0 4px rgba(242,124,166,.25)}
+.crud .error{color:var(--mawar);font-size:.85rem;font-weight:600;margin-top:4px}
+.crud .checks{display:flex;flex-wrap:wrap;gap:8px}
+.crud .chk{display:inline-flex!important;align-items:center;gap:8px;background:var(--pucuk-muda);border-radius:999px;padding:6px 14px;font-weight:600!important;color:var(--tinta)!important;margin:0!important;cursor:pointer}
+.crud .chk input{width:auto}
+.crud .actions{display:flex;gap:10px}
+.crud .alert{padding:12px 18px;border-radius:14px;margin-bottom:18px;font-weight:600;border:2px solid}
+.crud .alert.ok{background:var(--pucuk-muda);border-color:var(--daun);color:var(--rimba)}
+.crud .alert.err{background:var(--blush);border-color:var(--mawar);color:#7a1d47}
+.crud .detail{display:grid;grid-template-columns:260px 1fr;gap:24px}
+.crud .detail.one{grid-template-columns:1fr}
+.crud .detail img{width:100%;border-radius:18px;object-fit:cover;max-height:340px;border:2px solid var(--rimba)}
+.crud .kv{display:grid;grid-template-columns:90px 1fr;gap:4px 12px;margin:12px 0}
+.crud .kv dt{font-weight:700;color:var(--daun)}
+.crud .tip{background:var(--blush);border-radius:16px;padding:12px 16px;margin-top:14px}
+@media(max-width:760px){.crud .cols,.crud .g2,.crud .detail{grid-template-columns:1fr}.crud{padding:20px 14px 50px}}
+
+/* alert & peringatan di halaman CRUD */
+.crud .alert{padding:12px 18px;border-radius:14px;margin-bottom:18px;font-weight:600;border:2px solid}
+
+/* ==========================================================
+   VERSI LUCU: warna permen, sudut bulat, goyang kecil saat disentuh
+   ========================================================== */
+body.halaman-dalam{
+  background:
+    radial-gradient(circle at 8% 12%, rgba(242,124,166,.13) 0 90px, transparent 91px),
+    radial-gradient(circle at 94% 30%, rgba(207,232,201,.55) 0 120px, transparent 121px),
+    radial-gradient(circle at 12% 88%, rgba(233,225,247,.7) 0 100px, transparent 101px),
+    var(--kertas);
+  background-attachment:fixed;
+}
+.crud h1{font-size:2rem;letter-spacing:-.02em}
+.crud .head h1::after{content:" ✿";color:var(--kelopak)}
+.crud .halo h1::after{content:""}
+
+/* sapaan dashboard */
+.crud .halo{display:flex;align-items:center;gap:18px;background:#fff;border:2px solid var(--rimba);border-radius:28px;padding:18px 24px;box-shadow:6px 6px 0 var(--kelopak);margin-bottom:6px}
+.crud .halo-emoji{font-size:3.2rem;line-height:1;animation:goyang 3.2s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes goyang{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(7deg) translateY(-3px)}}
+
+/* kartu statistik berwarna */
+.crud .stat{position:relative;border-radius:26px;box-shadow:4px 4px 0 var(--rimba);transition:transform .2s cubic-bezier(.3,1.6,.5,1)}
+.crud .stat:hover{transform:translateY(-5px) rotate(-1.5deg)}
+.crud .stat i{position:absolute;right:14px;top:10px;font-style:normal;font-size:1.9rem}
+.crud .s-flora{background:#DDF1D8}.crud .s-fauna{background:#FFE0EC}.crud .s-artikel{background:#E9E1F7}
+.crud .s-laporan{background:#FFF0C9}.crud .s-user{background:#D9ECFF}
+
+/* kartu & tabel */
+.crud .card{border-radius:28px;box-shadow:5px 5px 0 var(--pucuk)}
+.crud .card.tbl{overflow:hidden;overflow-x:auto}
+.crud th{background:var(--pucuk);letter-spacing:.02em}
+.crud tbody tr:nth-child(even){background:#FFFAFC}
+.crud tbody tr{transition:background .15s}
+.crud tbody tr:hover{background:var(--blush)}
+.crud .kosong{text-align:center;padding:26px 12px;color:var(--mawar);font-weight:700}
+
+/* tombol bulat yang memantul */
+.crud .btn,.btn-mini,.btn-tambah{transition:transform .18s cubic-bezier(.3,1.7,.5,1),box-shadow .15s,background-color .2s}
+.crud .btn{background:var(--mawar);border-color:var(--rimba);box-shadow:3px 3px 0 var(--rimba)}
+.crud .btn:hover{transform:translate(2px,2px) rotate(-1deg);box-shadow:1px 1px 0 var(--rimba)}
+.crud .btn.ghost{background:#fff;color:var(--rimba);box-shadow:3px 3px 0 var(--pucuk)}
+.crud .btn.ghost:hover{background:var(--pucuk-muda);box-shadow:1px 1px 0 var(--pucuk)}
+.btn-mini:hover{transform:scale(1.08) rotate(-2deg)}
+.crud .act a:hover,.crud .link:hover{text-decoration:none;background:var(--blush);border-radius:999px;padding:3px 10px;margin-left:6px}
+
+/* lencana dengan emoji */
+.crud .badge{border:1.5px solid rgba(23,64,47,.25)}
+.crud .b-baru::before{content:""}.crud .b-diproses::before{content:""}.crud .b-selesai::before{content:""}
+.crud .b-fauna::before{content:""}.crud .b-flora::before{content:""}
+
+/* formulir */
+.crud .form{border-radius:30px;box-shadow:6px 6px 0 var(--kelopak)}
+.crud .field input,.crud .field select,.crud .field textarea{border-radius:18px;transition:border-color .2s,box-shadow .2s,transform .2s}
+.crud .field input:focus,.crud .field select:focus,.crud .field textarea:focus{transform:translateY(-1px)}
+.crud .chk{background:var(--pucuk);transition:transform .15s}
+.crud .chk:hover{transform:scale(1.05)}
+
+/* notifikasi */
+.crud .alert{border-radius:20px;box-shadow:3px 3px 0 var(--pucuk)}
+.crud .alert.ok::before{content:""}.crud .alert.err::before{content:""}
+
+/* sub-menu admin */
+.subnav a,.subnav summary{background:#fff;border:2px solid var(--garis);transition:transform .18s cubic-bezier(.3,1.7,.5,1)}
+.subnav a:hover,.subnav summary:hover{transform:translateY(-2px) rotate(-1deg)}
+.subnav a.on,.subnav .dd.on summary{box-shadow:3px 3px 0 var(--kelopak)}
+
+@media (prefers-reduced-motion:reduce){
+  .crud .halo-emoji{animation:none}
+  .crud .stat:hover,.crud .btn:hover,.btn-mini:hover,.subnav a:hover{transform:none}
+}
+@media(max-width:760px){.crud .halo{flex-direction:column;text-align:center;padding:16px}}
+
+/* ---------- Checklist password (halaman daftar) ---------- */
+.pw-cek{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;font-size:.82rem;color:var(--teks-lembut,#7a6a72)}
+.pw-cek li{position:relative;padding-left:20px}
+.pw-cek li::before{content:"";position:absolute;left:0;top:.3em;width:11px;height:11px;border-radius:50%;border:2px solid currentColor;opacity:.5}
+.pw-cek li.ok{color:#2f7d4f;font-weight:700}
+.pw-cek li.ok::before{background:#2f7d4f;border-color:#2f7d4f;opacity:1}
+@media (max-width:480px){.pw-cek{grid-template-columns:1fr}}
+
+/* ---------- Ikon garis di subnav admin ---------- */
+.subnav a,.subnav summary{display:inline-flex;align-items:center;gap:7px}
+.sn-ico{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sn-caret{width:14px;height:14px;margin-left:-2px}
+.subnav .dd>div a{display:block}
+/* ---------- Rapikan tabel admin ---------- */
+.crud td,.crud th{vertical-align:middle}
+.crud td{line-height:1.45}
+.crud th.r,.crud td.r{padding-right:20px}
+/* tanggal & status tidak boleh pecah baris */
+.crud .nw,.crud td:has(.badge){white-space:nowrap}
+.crud td .badge{white-space:nowrap;vertical-align:middle}
+.crud td .badge + .muted{margin-left:6px}
+/* tombol Aksi: ukuran tetap, hover tidak menggeser posisi */
+.crud .act a,.crud .act .link{display:inline-block;margin-left:2px;padding:3px 10px;border-radius:999px;line-height:1.3}
+.crud .act a:hover,.crud .link:hover{margin-left:2px;padding:3px 10px;background:var(--blush)}
+.crud .act form{display:inline-block;margin:0;vertical-align:middle}
+.crud .act a,.crud .act form{vertical-align:middle}
+/* jarak kolom Aksi lebih lega */
+.crud td.act, .crud th.r { padding-left: 48px; padding-right: 36px; }
+.crud .act a, .crud .act .link { margin-left: 28px; padding: 8px 20px; }
+.crud .act a:hover, .crud .link:hover { margin-left: 28px; padding: 8px 20px; }
+.crud .act form { margin-left: 0; }
+/* judul kolom tidak pecah baris */
+.crud th { white-space: nowrap; }
+/* navbar tidak pecah baris (menu user punya lebih banyak tombol) */
+.nav-links a, .nav-keluar { white-space: nowrap; }
+@media (min-width: 981px) {
+  .nav-links a { padding: 8px 12px; }
+  .nav-links .nav-btn { margin-left: 4px; }
+}
+@media (min-width: 981px) and (max-width: 1180px) {
+  .nav-links a, .nav-keluar { padding: 8px 9px; font-size: .86rem; }
+}

@@ -1,0 +1,183 @@
+{
+  "spesies": [
+    {
+      "nama": "Rafflesia Arnoldii",
+      "nama_latin": "Rafflesia arnoldii",
+      "tipe": "flora",
+      "id_status": 1,
+      "habitat": "Hutan hujan tropis",
+      "populasi": null,
+      "ciri_khas": "Tanpa akar, batang, daun",
+      "ringkasan": "Bunga terbesar di dunia yang tumbuh liar di hutan hujan Sumatera dan Kalimantan.",
+      "deskripsi": "Rafflesia arnoldii adalah tumbuhan parasit yang hidup menempel pada akar tanaman merambat Tetrastigma. Bunganya bisa tumbuh hingga diameter satu meter dan menjadi bunga tunggal terbesar di dunia. Karena tidak punya daun untuk berfotosintesis, ia bergantung sepenuhnya pada inangnya untuk bertahan hidup.",
+      "fakta": "Bunga Rafflesia mengeluarkan bau seperti daging busuk untuk menarik lalat sebagai penyerbuk, makanya sering dijuluki 'bunga bangkai' meski beda spesies dengan Amorphophallus titanum.",
+      "gambar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyQI258x8TipVWLSCMXqAKoQfMJhoDvegRgsit7zH2w&s=10",
+      "lokasi": [
+        1,
+        2
+      ]
+    },
+    {
+      "nama": "Bunga Bangkai",
+      "nama_latin": "Amorphophallus titanum",
+      "tipe": "flora",
+      "id_status": 1,
+      "habitat": "Hutan dataran rendah",
+      "populasi": null,
+      "ciri_khas": "Tinggi bisa capai 3-4 m",
+      "ringkasan": "Tumbuhan endemik Sumatera dengan bunga majemuk tertinggi di dunia.",
+      "deskripsi": "Berbeda dari Rafflesia, Amorphophallus titanum punya umbi dan daun, hanya saja bunganya (yang sebenarnya adalah rangkaian bunga majemuk atau perbungaan) mekar sangat jarang, kadang hanya sekali dalam beberapa tahun. Perbungaannya adalah yang tertinggi di dunia.",
+      "fakta": "Saat mekar, bunga bangkai bisa mengeluarkan panas dan aroma busuk yang menyebar sampai ratusan meter untuk menarik serangga penyerbuk.",
+      "gambar_url": "https://media.istockphoto.com/id/2173142816/id/foto/bunga-mayat-amorphophallus-titanum.jpg?s=612x612&w=0&k=20&c=AiLy1f3ZiXZtZhAXhJCArUFseWZvey750RGGxYDiRDU=",
+      "lokasi": [
+        1
+      ]
+    },
+    {
+      "nama": "Anggrek Hitam",
+      "nama_latin": "Coelogyne pandurata",
+      "tipe": "flora",
+      "id_status": 1,
+      "habitat": "Hutan rawa & tepi sungai",
+      "populasi": null,
+      "ciri_khas": "Bercak hitam di lidah bunga",
+      "ringkasan": "Anggrek langka khas Kalimantan dengan bercak hitam khasnya di kelopak bunga.",
+      "deskripsi": "Anggrek hitam adalah flora identitas Kalimantan Timur. Warna hijau kekuningan pada kelopaknya dipadukan dengan corak hitam keunguan yang khas membuatnya jadi salah satu anggrek paling dicari kolektor, sekaligus alasan populasinya terus menurun akibat perburuan liar.",
+      "fakta": "Karena keindahannya, anggrek hitam sering diburu untuk diperjualbelikan secara ilegal, padahal statusnya dilindungi undang-undang.",
+      "gambar_url": "https://ugm.ac.id/wp-content/uploads/2023/10/orchidplantcare.info_.jpg",
+      "lokasi": [
+        2
+      ]
+    },
+    {
+      "nama": "Cendana",
+      "nama_latin": "Santalum album",
+      "tipe": "flora",
+      "id_status": 1,
+      "habitat": "Hutan tropis kering",
+      "populasi": null,
+      "ciri_khas": "Kayu & akar beraroma khas",
+      "ringkasan": "Pohon penghasil kayu wangi khas Nusa Tenggara Timur yang populasinya kian menipis.",
+      "deskripsi": "Cendana dikenal karena kayu dan minyaknya yang harum, banyak dipakai untuk parfum, kosmetik, hingga upacara adat. Nilai ekonominya yang tinggi justru membuat pohon ini terus diburu dan ditebang, sehingga populasinya di alam liar semakin sulit ditemukan.",
+      "fakta": "Cendana butuh puluhan tahun untuk tumbuh sampai kayunya cukup wangi dan bernilai, sehingga penebangan liar bisa berdampak sangat lama untuk pemulihannya.",
+      "gambar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnj6mOqfV2hTHT09BwUA2BkBbwBgxa2WlaRaQp0HcSi4Z_YjIm_hjz4I0&s=10",
+      "lokasi": [
+        3
+      ]
+    },
+    {
+      "nama": "Orangutan Sumatera",
+      "nama_latin": "Pongo abelii",
+      "tipe": "fauna",
+      "id_status": 2,
+      "habitat": "Hutan primer dataran rendah",
+      "populasi": "Sekitar 14.000 ekor",
+      "ciri_khas": null,
+      "ringkasan": "Kera besar endemik Sumatera yang habitatnya terus menyusut akibat deforestasi.",
+      "deskripsi": "Orangutan Sumatera hidup di kanopi hutan hujan dan sangat bergantung pada hutan primer yang luas. Perusakan habitat akibat perkebunan sawit, pembalakan liar, dan perburuan membuat populasinya terus menurun drastis dalam beberapa dekade terakhir.",
+      "fakta": "Orangutan Sumatera termasuk hewan paling cerdas di dunia dan bisa menggunakan alat sederhana, misalnya ranting untuk mengambil makanan dari celah pohon.",
+      "gambar_url": "https://cdn.betahita.id/5/8/9/7/5897.jpeg",
+      "lokasi": [
+        1
+      ]
+    },
+    {
+      "nama": "Harimau Sumatera",
+      "nama_latin": "Panthera tigris sumatrae",
+      "tipe": "fauna",
+      "id_status": 2,
+      "habitat": "Hutan hujan & pegunungan",
+      "populasi": "Kurang dari 600 ekor",
+      "ciri_khas": null,
+      "ringkasan": "Subspesies harimau terakhir di Indonesia yang kini jumlahnya kurang dari 600 ekor.",
+      "deskripsi": "Setelah harimau Jawa dan Bali dinyatakan punah, harimau Sumatera menjadi satu-satunya subspesies harimau yang tersisa di Indonesia. Ancaman utamanya adalah hilangnya habitat dan perburuan liar untuk diambil kulit serta bagian tubuhnya.",
+      "fakta": "Setiap harimau Sumatera punya pola garis loreng yang unik, mirip seperti sidik jari manusia, sehingga tidak ada dua individu dengan pola yang persis sama.",
+      "gambar_url": "https://www.marariversafarilodge.com/wp-content/uploads/2022/08/harimau-sumatra-1024x576.jpg",
+      "lokasi": [
+        1
+      ]
+    },
+    {
+      "nama": "Badak Jawa",
+      "nama_latin": "Rhinoceros sondaicus",
+      "tipe": "fauna",
+      "id_status": 2,
+      "habitat": "Hutan hujan dataran rendah",
+      "populasi": "Sekitar 76 ekor",
+      "ciri_khas": null,
+      "ringkasan": "Salah satu mamalia paling langka di dunia yang hanya tersisa di Ujung Kulon.",
+      "deskripsi": "Badak Jawa kini hanya bisa ditemukan di satu tempat di dunia, yaitu Taman Nasional Ujung Kulon, Banten. Populasi kecil dan area penyebaran yang sangat terbatas membuat spesies ini sangat rentan terhadap bencana alam maupun penyakit.",
+      "fakta": "Karena populasinya sangat kecil dan terisolasi di satu lokasi, badak Jawa disebut sebagai salah satu mamalia besar paling terancam punah di dunia.",
+      "gambar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9e70pAjniADcNWJNH5gGjV0aixTts5J4pxCBmI7HyyD-Iv4bQ8aYJolot&s=10",
+      "lokasi": [
+        4
+      ]
+    },
+    {
+      "nama": "Komodo",
+      "nama_latin": "Varanus komodoensis",
+      "tipe": "fauna",
+      "id_status": 3,
+      "habitat": "Savana & hutan tropis kering",
+      "populasi": "Sekitar 3.000 ekor",
+      "ciri_khas": null,
+      "ringkasan": "Kadal terbesar di dunia yang hanya hidup di beberapa pulau di Nusa Tenggara.",
+      "deskripsi": "Komodo adalah kadal terbesar yang masih hidup saat ini dan hanya ditemukan secara alami di beberapa pulau di Taman Nasional Komodo. Air liurnya mengandung bakteri dan racun yang membantunya melumpuhkan mangsa berukuran besar.",
+      "fakta": "Komodo bisa mendeteksi bau bangkai dari jarak beberapa kilometer menggunakan lidahnya yang bercabang, mirip cara kerja indra penciuman ular.",
+      "gambar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKS95r_gl0yzA_orF5LYhY1Ip3H3ZHAWBrs3LLiz8sA&s=10",
+      "lokasi": [
+        5
+      ]
+    }
+  ],
+  "artikel": [
+    {
+      "slug": "apa-itu-perdagangan-ilegal",
+      "judul": "Apa itu Perdagangan Ilegal Satwa Liar?",
+      "id_kategori": 1,
+      "tanggal": "2024-04-20",
+      "isi": "Perdagangan ilegal satwa liar adalah kegiatan menangkap, memelihara, menjual, atau mengangkut satwa dan tumbuhan liar tanpa izin resmi. Yang diperdagangkan bisa berupa hewan hidup, kulit, tanduk, gading, sisik, maupun tumbuhan langka seperti anggrek.\n\nDi Indonesia, jenis yang dilindungi diatur dalam peraturan perundang-undangan. Menangkap, memiliki, menyimpan, atau memperdagangkan jenis yang dilindungi, baik dalam keadaan hidup maupun mati, termasuk pelanggaran hukum.\n\nPerdagangan ini terus ada karena ada permintaan, misalnya untuk hewan peliharaan eksotis, koleksi, hiasan, dan bahan obat tradisional. Kini banyak transaksi terjadi lewat media sosial dan marketplace, sehingga lebih sulit dipantau.",
+      "gambar_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "slug": "dampak-keanekaragaman-hayati",
+      "judul": "Dampak Perdagangan Ilegal terhadap Keanekaragaman Hayati",
+      "id_kategori": 2,
+      "tanggal": "2024-04-15",
+      "isi": "Setiap spesies punya peran dalam ekosistemnya. Orangutan membantu menyebarkan biji, harimau menjaga jumlah hewan mangsa, dan lebah serta serangga penyerbuk menjaga tumbuhan tetap berbunga dan berbuah.\n\nKetika satu spesies diambil terus-menerus dari alam, rantai ini ikut terganggu. Populasi yang menyusut membuat spesies lebih rentan terhadap penyakit dan perubahan lingkungan, dan dalam kasus terburuk berujung pada kepunahan.\n\nKepunahan tidak bisa dibatalkan. Itu sebabnya mencegah perdagangan ilegal jauh lebih efektif daripada memulihkan populasi yang sudah hampir habis.",
+      "gambar_url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "slug": "cara-melindungi-sekitar-kita",
+      "judul": "Cara Melindungi Flora dan Fauna di Sekitar Kita",
+      "id_kategori": 3,
+      "tanggal": "2024-04-10",
+      "isi": "Melindungi flora dan fauna tidak harus dimulai dari hal besar. Langkah sederhana di sekitar kita sudah berarti.\n\nJangan membeli atau memelihara satwa dan tumbuhan dilindungi, sekalipun dijual murah atau terlihat menggemaskan. Cari tahu dulu asal-usul dan status perlindungannya sebelum membeli tanaman hias atau hewan peliharaan.\n\nKurangi jejak lingkungan kita: pilih produk kayu dan kertas yang bersertifikat, kurangi sampah plastik, dan jangan membuang sampah di hutan, sungai, atau pantai.\n\nTerakhir, sebarkan informasinya. Ajak teman dan keluarga mengenal spesies dilindungi, dan laporkan kalau menemukan dugaan perdagangan ilegal.",
+      "gambar_url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "slug": "status-perlindungan",
+      "judul": "Mengenal Status Perlindungan: Dilindungi, CITES, dan IUCN",
+      "id_kategori": 1,
+      "tanggal": "2024-04-05",
+      "isi": "Status perlindungan sebuah spesies bisa berasal dari beberapa sistem yang berbeda, dan sering kali dibaca bersamaan.\n\nStatus dilindungi adalah penetapan di tingkat nasional. Spesies dengan status ini tidak boleh ditangkap, dipelihara, atau diperdagangkan tanpa izin.\n\nCITES adalah perjanjian internasional yang mengatur perdagangan lintas negara. Spesies dikelompokkan ke dalam Apendiks I, II, dan III sesuai tingkat pembatasan perdagangannya.\n\nIUCN Red List menilai risiko kepunahan sebuah spesies di alam, dari Least Concern sampai Critically Endangered. Ini adalah penilaian ilmiah, bukan aturan hukum, tetapi sering menjadi dasar penentuan prioritas konservasi.",
+      "gambar_url": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "slug": "hutan-sumatera-menyusut",
+      "judul": "Mengapa Hutan Hujan Terus Menyusut?",
+      "id_kategori": 2,
+      "tanggal": "2024-04-01",
+      "isi": "Hutan hujan tropis menyimpan sebagian besar keanekaragaman hayati daratan, tetapi luasnya terus berkurang. Penyebab utamanya antara lain pembukaan lahan untuk perkebunan, pembalakan liar, kebakaran, dan pembangunan infrastruktur.\n\nKetika hutan terpecah menjadi bagian-bagian kecil, satwa kehilangan ruang jelajah dan sumber makanan. Pertemuan satwa dengan permukiman juga makin sering terjadi dan sering berakhir merugikan satwa.\n\nMelindungi hutan berarti melindungi rumah ribuan spesies sekaligus menjaga air, udara, dan iklim yang kita butuhkan.",
+      "gambar_url": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "slug": "melapor-dengan-aman",
+      "judul": "Cara Melaporkan Dugaan Perdagangan Satwa dengan Aman",
+      "id_kategori": 3,
+      "tanggal": "2024-03-28",
+      "isi": "Kalau menemukan dugaan perdagangan satwa atau tumbuhan dilindungi, utamakan keselamatan diri. Jangan mendekati atau menegur pelaku sendirian.\n\nCatat hal yang kamu lihat: jenis satwa atau tumbuhan, lokasi, tanggal dan waktu, serta ciri-ciri penjual atau akun penjualnya. Kalau aman, ambil foto atau tangkapan layar tanpa mengganggu situasi.\n\nSampaikan laporan lewat formulir WildGuard di bawah, atau langsung ke Balai Konservasi Sumber Daya Alam (BKSDA) terdekat. Jangan membeli satwa tersebut dengan alasan 'menyelamatkan', karena itu justru menjaga permintaan tetap ada.",
+      "gambar_url": "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=400&q=80"
+    }
+  ]
+}
